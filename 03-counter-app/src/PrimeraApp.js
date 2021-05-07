@@ -1,5 +1,7 @@
-//import React, { Fragment } from 'react'
 import React from 'react'
+import PropTypes from 'prop-types';
+
+//import React, { Fragment } from 'react'
 
 
 // Functional Components - FC
@@ -12,8 +14,10 @@ import React from 'react'
 //     );
 // }
 
-const PrimeraApp = ({ saludo = 'Hola Mundo default' }) => {
-    console.log(saludo);
+//const PrimeraApp = ({ saludo = 'Hola Mundo default' }) => {
+const PrimeraApp = ({ saludo }) => {
+    
+    
     return ( 
         <>
             <h1>{ saludo }</h1>
@@ -23,14 +27,8 @@ const PrimeraApp = ({ saludo = 'Hola Mundo default' }) => {
     );
 }
 
+PrimeraApp.propTypes = {
+    saludo: PropTypes.string.isRequired
+}
+
 export default PrimeraApp;
-
-
-
-
-//const saludo = 123;
-//const saludo = [1,2,3,6,9];
-// const saludo = {
-//     nombre:'Christian',
-//     edad: 34
-// };
