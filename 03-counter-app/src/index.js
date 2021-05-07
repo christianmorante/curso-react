@@ -7,7 +7,7 @@ import './index.css'
 //const saludo = <h1>Hola Mundo</h1>
 
 const divRoot = document.querySelector('#app');
-//console.log(divRoot); saludo='Hola soy Chris'
+//console.log(divRoot); 
 
 
-ReactDOM.render( <PrimeraApp  />, divRoot);
+ReactDOM.render( <PrimeraApp saludo='Hola soy Chris' />, divRoot);
