@@ -8,7 +8,7 @@ describe('Tests 02-template-strings.js', ()=> {
         const nombre = 'Fernando';
 
         const saludo = getSaludo(nombre);
-        console.log(saludo);
+        //console.log(saludo);
 
         expect( saludo ).toBe( 'Hola '+nombre +'!');
 
@@ -16,8 +16,8 @@ describe('Tests 02-template-strings.js', ()=> {
 
     test('debe saludar si envio vacio', () => {
         const saludo = getSaludo();
-        console.log(saludo);
+        //console.log(saludo);
         expect(saludo).toBe( 'Hola Carlos!' );
-    })
+    });
     
 });
