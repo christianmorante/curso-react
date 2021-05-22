@@ -1,13 +1,8 @@
 
 // Funciones en JS
 
-
-
-
-const saludar3 = ( nombre ) => `Hola, ${ nombre }`;
-const saludar4 = () => `Hola Mundo`;
-
-
+//const saludar3 = ( nombre ) => `Hola, ${ nombre }`;
+//const saludar4 = () => `Hola Mundo`;
 
 
 export const getUser = () => ({
@@ -20,12 +15,12 @@ export const getUser = () => ({
 //console.log(user);
 
 // Tarea
-const getUsuarioActivo = ( nombre ) =>({
+export const getUsuarioActivo = ( nombre ) =>({
     uid: 'ABC567',
     username: nombre
 })
 
-const usuarioActivo = getUsuarioActivo('Fernando');
+//const usuarioActivo = getUsuarioActivo('Fernando');
 //console.log( usuarioActivo );
 
 
