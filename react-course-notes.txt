@@ -7,3 +7,7 @@ Seccion 3 - 11
 
 https://create-react-app.dev/
 
+
+
+Clase 58:
+Falla el test ya que la funcion toBeInTheDocument no existe. se debe agregar archivo setupTests.js
