@@ -7,11 +7,21 @@ describe('pruebas promesas', () => {
         const heroId = 1;
         getHeroeByIdAsync( heroId ).then( hero => {
             //console.log(hero);
-            expect( hero ).toEqual(heroes.find(h => h.id === heroId));
+            expect( hero ).toEqual(heroes[0]);
             done();
         });
         
+    });
+
+    test('should return error', (done) => {
+        const heroId = 10;
+        getHeroeByIdAsync( heroId )
+            .catch( error => {
+                expect( error ).toBe('No se pudo encontrar el héroe');
+                done();
+            });
     })
+    
     
 
 
