@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pruebas en PrimeraApp should show PrimeraApp ok 1`] = `
+<Fragment>
+  <h1>
+    Hola soy Goku2
+  </h1>
+  <p>
+    subtitulo por defecto
+  </p>
+</Fragment>
+`;
