@@ -4,7 +4,7 @@ import { GiftList } from './components/GiftList';
 
 export const GiftExpertApp = () => {
 
-    const [categories, setCategories] = useState([ 'One Punch']);
+    const [categories, setCategories] = useState(['phil modern family']);
 
     // const handleAdd = () => {
     //     //setCategories( ['Nueva Categoria',...categories] );
@@ -13,7 +13,7 @@ export const GiftExpertApp = () => {
 
     return (
         <>
-            <h2>GiftExpertApp</h2>
+            <h2>Gift Expert App</h2>
             < AddCategory onSetCategories={ setCategories } />
             <hr />
 

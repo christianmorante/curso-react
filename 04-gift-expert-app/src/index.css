@@ -11,5 +11,30 @@ body {
 input {
   color: gray;
   font-size: 1.2rem;
-  width: 100%;  
+  width: 90%;  
+}
+
+
+.giftcard {
+  align-content: center;
+  border: 1px solid gray;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  margin-right: 6px;
+  overflow: hidden;
+}
+
+.giftcard p {
+  padding: 5px;
+  text-align: center;
+}
+
+.giftcard img {
+  max-height: 170px;
+}
+
+.giftcard-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

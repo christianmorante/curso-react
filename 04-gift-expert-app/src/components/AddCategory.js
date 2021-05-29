@@ -13,19 +13,27 @@ export const AddCategory = ({ onSetCategories }) => {
         e.preventDefault();
 
         if(inputValue.trim().length > 2) {
-          onSetCategories( cats => [...cats, inputValue]);
+          onSetCategories( cats => [inputValue, ...cats]);
           setInputValue('');
         }
     };
 
+    const handleClearCategories = () => {
+        onSetCategories([]);
+        setInputValue('');
+    };
+
     return (
-        <form onSubmit={ handleSubmit }>
-            <input 
-                type="text"
-                value={ inputValue }
-                onChange={ handleInputChange }
-            />
-        </form>
+        <>
+            <form onSubmit={ handleSubmit }>
+                <input 
+                    type="text"
+                    value={ inputValue }
+                    onChange={ handleInputChange }
+                />
+                <button type="button" onClick={ handleClearCategories } >Clear</button>
+            </form>
+        </>
     )
 }
 
