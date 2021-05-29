@@ -4,7 +4,7 @@ import { GiftList } from './components/GiftList';
 
 export const GiftExpertApp = () => {
 
-    const [categories, setCategories] = useState(['phil modern family']);
+    const [categories, setCategories] = useState(['modern family']);
 
     // const handleAdd = () => {
     //     //setCategories( ['Nueva Categoria',...categories] );
