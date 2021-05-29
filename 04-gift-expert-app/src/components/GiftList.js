@@ -12,8 +12,8 @@ export const GiftList = ({ category }) => {
 
     return (
         <>
-            <h3>{ category }</h3>
-            { loading && <p>Loading</p> }
+            <h3 className="">{ category }</h3>
+            { loading && <p className="animate__animated animate__flash">Loading</p> }
             <div className="giftcard-grid">
                 { 
                     gifs.map( img => 
