@@ -9,7 +9,6 @@ export const AddCategory = ({ onSetCategories }) => {
     };
     
     const handleSubmit = (e) => {
-        //console.log('submit done', e);
         e.preventDefault();
 
         if(inputValue.trim().length > 2) {

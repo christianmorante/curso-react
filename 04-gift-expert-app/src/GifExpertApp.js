@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import { AddCategory } from './components/AddCategory';
-import { GiftList } from './components/GiftList';
+import { GifList } from './components/GifList';
 
-export const GiftExpertApp = () => {
+export const GifExpertApp = () => {
 
     const [categories, setCategories] = useState(['modern family']);
 
@@ -21,7 +21,7 @@ export const GiftExpertApp = () => {
             <ol>
                 {
                     categories.map( cat => 
-                        <GiftList 
+                        <GifList 
                             key= { cat }
                             category={ cat } />
                     )

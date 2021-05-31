@@ -2,7 +2,7 @@ import React from 'react';
 import { useFetchGifs } from '../hooks/useFetchGifs';
 import { GifItem } from './GifItem';
 
-export const GiftList = ({ category }) => {
+export const GifList = ({ category }) => {
     // const [images, setImages] = useState([]);
     const { data:gifs, loading } = useFetchGifs( category );
     // useEffect( () => {
