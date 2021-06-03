@@ -25,7 +25,6 @@ export const CounterApp = () => {
 
     return (
         <>
-            <h1>useState</h1><br />
             <h3>Counter1 <span className="badge bg-secondary">{ counter.counter1 }</span></h3>
             <h3>Counter2 <span className="badge bg-secondary">{ counter.counter2}</span></h3>
             <button className="btn btn-primary" onClick={ handleCounter1 }>
@@ -35,7 +34,7 @@ export const CounterApp = () => {
                 Counter2 +1
             </button>
           <p>Se debe usar el operador spread para mantener el estado de las demas propiedades que no se van a afectar del objeto counter</p>
-          <pre>
+          <pre className="bg-dark text-white">
               {
                 `
                 const [counter, setCounter] = useState({
