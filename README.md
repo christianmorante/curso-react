@@ -5,3 +5,4 @@ All applications developed during the course
 
 ### Gif Expert App 🚀
 React web application with components to render gifs from [Giphy](https://giphy.com/)
+![Gif Expert App image](./docs/rsc/GifExpertApp.png)
