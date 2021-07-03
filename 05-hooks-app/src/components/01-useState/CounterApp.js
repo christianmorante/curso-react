@@ -33,29 +33,29 @@ export const CounterApp = () => {
             <button className="btn btn-warning" onClick={ handleCounter2 }>
                 Counter2 +1
             </button>
-          <p>Se debe usar el operador spread para mantener el estado de las demas propiedades que no se van a afectar del objeto counter</p>
-          <pre className="bg-dark text-white">
-              {
-                `
-                const [counter, setCounter] = useState({
-                    counter1: 10,
-                    counter2: 20
-                });
-                const handleCounter1 = (e) => {
-                    setCounter({
-                        ...counter,
-                        counter1: counter.counter1+1
+            <p>Se debe usar el operador spread para mantener el estado de las demas propiedades que no se van a afectar del objeto counter</p>
+            <pre className="bg-dark text-white">
+                {
+                    `
+                    const [counter, setCounter] = useState({
+                        counter1: 10,
+                        counter2: 20
                     });
-                };
-                const handleCounter2 = (e) => {
-                    setCounter({
-                        ...counter,
-                        counter2: counter.counter2+1
-                    });
-                };
-                `
-              }
-          </pre>
+                    const handleCounter1 = (e) => {
+                        setCounter({
+                            ...counter,
+                            counter1: counter.counter1+1
+                        });
+                    };
+                    const handleCounter2 = (e) => {
+                        setCounter({
+                            ...counter,
+                            counter2: counter.counter2+1
+                        });
+                    };
+                    `
+                }
+            </pre>
 
         </>
     )
