@@ -9,6 +9,7 @@ export const FormWithCustomHook = () => {
         email:'',
         password:''
     });
+    
     const { name, email, password } = formValues;
 
     useEffect(() => {
@@ -37,6 +38,7 @@ export const FormWithCustomHook = () => {
                         onChange={ handleInputChange }
                     />
                 </div>
+                
                 <div className="form-group mt-2">
                     <input type="text"
                         name="email"
@@ -47,6 +49,7 @@ export const FormWithCustomHook = () => {
                         onChange={ handleInputChange }
                     />
                 </div>
+                
                 <div className="form-group mt-2">
                     <input type="password"
                         name="password"
