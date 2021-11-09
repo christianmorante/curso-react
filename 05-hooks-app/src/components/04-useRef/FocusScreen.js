@@ -2,17 +2,19 @@ import React, { useRef } from 'react'
 
 export const FocusScreen = () => {
 
-    const ref = useRef();
+    const inputRef = useRef();
 
     const handleClick = () => {
-        document.querySelector('input').select(); //.focus();
+        //document.querySelector('input').select(); //.focus();
+        inputRef.current.select()
     };
 
     return (
         <div>
             <h1>Focus Screen</h1>
             <hr />
-            <input className="form-control" placeholder="Nombre" />
+            <input ref={ inputRef }
+                className="form-control" placeholder="Nombre" />
             <button className="btn btn-outline-primary"
                     onClick={ handleClick }>
                 Focus
