@@ -1,7 +1,7 @@
 import React from 'react'
 import { useCounter } from '../../hooks/useCounter';
 
-import './CounterApp.css';
+//import './CounterApp.css';
 
 export const CounterWithCustomHook = () => {
     const factor = 2;

@@ -1,25 +1,24 @@
 import React from 'react'
 import { useCounter } from '../../hooks/useCounter';
 import { useFetch } from '../../hooks/useFetch';
-import '../02-useEffect/effects.css';
+//import '../02-useEffect/effects.css';
 
 export const MultipleCustomHooks = () => {
 
-    const {counter, increment } = useCounter(29);
+    const {counter, increment } = useCounter(1);
 
     const { loading, data } = useFetch( `https://www.breakingbadapi.com/api/quotes/${ counter }` );
     //console.log( loading );
     //console.log( data );
 
     //const { quote, author } = (data && data[0] != null) ? data[0] : { autor: '', data:undefined };
-    const { quote, author } = (!!data && data.length >0) && data[0];
+    const { quote, author } = (!!data && data.length > 0) && data[0];
     //console.log( author, quote );
     
     return (
         <div>
-            <h1>Custom hooks!!</h1>
-            <br />
-
+            <h1>Custom hooks</h1>
+            <hr />
             <h3>BreakingBad Quotes</h3>
             {
                 loading ? (
