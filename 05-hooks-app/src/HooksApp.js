@@ -15,8 +15,8 @@ export const HooksApp = () => {
             <FocusScreen />
             <br />
             
-            <MultipleCustomHooks />
-            <br />
+            {/* <MultipleCustomHooks />
+            <br /> */}
 
             <FormWithCustomHook />
             <br />
