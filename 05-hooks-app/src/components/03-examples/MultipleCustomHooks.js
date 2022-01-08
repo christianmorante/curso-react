@@ -17,9 +17,8 @@ export const MultipleCustomHooks = () => {
     
     return (
         <div>
-            <h1>Custom hooks</h1>
+            <h1>BreakingBad Quotes</h1>
             <hr />
-            <h3>BreakingBad Quotes</h3>
             {
                 loading ? (
                     
