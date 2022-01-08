@@ -14,15 +14,20 @@ export const HooksApp = () => {
             <hr />
             <LayoutEffect />
             
+            
+            
+            {/* 
             <hr />
             <FocusScreen />
             <br />
             
-            {/* <MultipleCustomHooks />
-            <br /> */}
-
+            <MultipleCustomHooks />
+            <br /> 
             <FormWithCustomHook />
             <br />
+            
+            */}
+
              {/* <UseStateComps /> */}
             
         </div>
